@@ -12,7 +12,7 @@ RUN \
   apk add --no-cache make git ucl gawk zip && \
   apk add --no-cache --virtual .build-deps bash gcc musl-dev patch wget zlib-dev ucl-dev && \
 
-  git clone --depth 1 https://github.com/ps2dev/ps2toolchain && \
+  git clone --branch newlib-3.0.0 --depth 1 https://github.com/BoGanon/ps2toolchain && \
   cd ps2toolchain && \
     ./toolchain.sh 1 && \
     ./toolchain.sh 2 && \
